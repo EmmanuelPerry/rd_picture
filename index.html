@@ -4,40 +4,45 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-      <!-- Critical CSS inline (basique pour éviter FOUC) -->
+      <!-- Critical CSS inline (essentiel pour éviter FOUC et LCP) -->
       <style>
         body { margin: 0; font-family: 'Poppins', sans-serif; background: #fff; }
         header { background: #222; color: #fff; }
+        h1, h2 { color: #f3961c; }
       </style>
     
-      <!--  Preload principal CSS -->
+      <!-- Fonts: préconnect + preload + swap -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+      <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+      </noscript>
+    
+      <!-- Main CSS (préchargé) -->
       <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
       <noscript><link rel="stylesheet" href="style.css"></noscript>
     
-      <!--  Font Awesome (préconnect pour accélérer) -->
-      <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <!-- FontAwesome CSS (chargé de manière non bloquante) -->
+      <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      </noscript>
     
-      <!--  AOS CSS -->
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+      <!-- AOS CSS (chargé non bloquant) -->
+      <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+      </noscript>
     
       <!-- Favicon -->
       <link rel="icon" href="images/image/photo_2025-08-19_09-10-13_1_64x64.webp" type="image/webp">
     
-      <!--  Fonts (préconnect + swap pour éviter blocage) -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-      <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"></noscript>
-    
+      <!-- Title & SEO -->
       <title>RD Picture | Accueil</title>
-    
-      <!--  SEO -->
       <meta name="description" content="RD Picture est une entreprise de photographie qui met en avant le travail d'une équipe de jeunes photographes Camerounais passionnés, capturant vos moments de manière unique et distinguée.">
       <meta name="msvalidate.01" content="124CABEA5EFA591E98085FB3D9F210F2">
-      <meta name="msvalidate.01" content="124CABEA5EFA591E98085FB3D9F210F2" />
-      <meta name="google-site-verification" content="xynfHsQxckqAPLTASYyrtlnSz6VNG7CcbLHCM4DlDgE" />
+      <meta name="google-site-verification" content="xynfHsQxckqAPLTASYyrtlnSz6VNG7CcbLHCM4DlDgE">
     </head>
 
  <body>
