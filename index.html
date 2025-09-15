@@ -4,47 +4,60 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-      <!-- Critical CSS inline (essentiel pour éviter FOUC et LCP) -->
+      <!-- Critical CSS inline -->
       <style>
         body { margin: 0; font-family: 'Poppins', sans-serif; background: #fff; }
         header { background: #222; color: #fff; }
         h1, h2 { color: #f3961c; }
       </style>
     
-      <!-- Fonts: préconnect + preload + swap -->
+      <!-- Fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-      <noscript>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-      </noscript>
+      <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"></noscript>
     
-      <!-- Main CSS (préchargé) -->
+      <!-- CSS -->
       <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
       <noscript><link rel="stylesheet" href="style.css"></noscript>
     
-      <!-- FontAwesome CSS (chargé de manière non bloquante) -->
+      <!-- FontAwesome -->
       <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-      <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-      </noscript>
+      <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
     
-      <!-- AOS CSS (chargé non bloquant) -->
+      <!-- AOS -->
       <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-      <noscript>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-      </noscript>
+      <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"></noscript>
     
       <!-- Favicon -->
       <link rel="icon" href="images/image/photo_2025-08-19_09-10-13_1_64x64.webp" type="image/webp">
     
-      <!-- Title & SEO -->
+      <!-- Canonical -->
+      <link rel="canonical" href="https://rd-picture.onrender.com/">
+    
+      <!-- SEO -->
       <title>RD Picture | Accueil</title>
+      <meta name="author" content="RD Picture">
       <meta name="description" content="RD Picture est une entreprise de photographie qui met en avant le travail d'une équipe de jeunes photographes Camerounais passionnés, capturant vos moments de manière unique et distinguée.">
-      <meta name="msvalidate.01" content="124CABEA5EFA591E98085FB3D9F210F2">
+      <meta name="keywords" content="photographie, Cameroun, shooting, studio, mariage, portrait, RD Picture">
       <meta name="google-site-verification" content="xynfHsQxckqAPLTASYyrtlnSz6VNG7CcbLHCM4DlDgE">
+      <meta name="msvalidate.01" content="124CABEA5EFA591E98085FB3D9F210F2">
+    
+      <!-- Open Graph -->
+      <meta property="og:title" content="RD Picture | Photographie Cameroun">
+      <meta property="og:description" content="Capturons vos moments avec créativité et distinction.">
+      <meta property="og:image" content="https://rd-picture.onrender.com/images/image/photo_2025-08-19_09-10-13_large.webp">
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="630">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://rd-picture.onrender.com/">
+    
+      <!-- Twitter Cards -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="RD Picture | Photographie Cameroun">
+      <meta name="twitter:description" content="Capturons vos moments avec créativité et distinction.">
+      <meta name="twitter:image" content="https://rd-picture.onrender.com/images/image/photo_2025-08-19_09-10-13_large.webp">
     </head>
-
  <body>
     <!-- Header  -->
     <header>
@@ -85,7 +98,6 @@
                               <li><a href="#like5">Shooting Évènement</a></li>
                               <li><a href="#like6">Shooting Nature</a></li>
                           </ul>
-                      </li>
                   </li>
   
                   <li class="nav-item">
@@ -176,7 +188,7 @@
         </div>
         <section class="gallery-section">
 
-            <h2 class="gi" id="go">Shooting Enfants</h2>
+            <h2 class="gi ">Shooting Enfants</h2>
 
                 <div class="section-content">
                     <ul class="gallery-list">
@@ -203,7 +215,7 @@
             </div>
             <section class="gallery-section">
 
-                <h2 class="gi" id="go">Shooting Studio</h2>
+                <h2 class="gi">Shooting Studio</h2>
 
                     <div class="section-content">
                         <ul class="gallery-list">
@@ -214,7 +226,7 @@
                                 <img src="https://res.cloudinary.com/dtyodgaxi/image/upload/v1757586136/photo_14_2025-08-25_08-51-33_qy1fek.jpg" alt="Gallery" class="gallery-image" loading="lazy">
                               </li>
                               <li class="gallery-item">
-                                 <img src="https://res.cloudinary.com/dtyodgaxi/image/upload/v1757586137/photo_15_2025-08-25_08-51-33_z2oaof.jpg" alt="Gallery" class="gallery-image">
+                                 <img src="https://res.cloudinary.com/dtyodgaxi/image/upload/v1757586137/photo_15_2025-08-25_08-51-33_z2oaof.jpg" alt="Gallery" class="gallery-image" loading="lazy">
                               </li>
 
                               <li class="gallery-item">
@@ -224,7 +236,7 @@
                                  <img src="https://res.cloudinary.com/dtyodgaxi/image/upload/v1757586137/photo_16_2025-08-25_08-51-33_nwz6mj.jpg" alt="Gallery" class="gallery-image" loading="lazy">
                               </li>
                               <li class="gallery-item">
-                                 <img src="https://res.cloudinary.com/dtyodgaxi/image/upload/v1757586135/photo_18_2025-08-25_08-51-33_kvgkam.jpg" alt="Gallery" class="gallery-image">
+                                 <img src="https://res.cloudinary.com/dtyodgaxi/image/upload/v1757586135/photo_18_2025-08-25_08-51-33_kvgkam.jpg" alt="Gallery" class="gallery-image" loading="lazy"> 
                               </li>
                               <li class="gallery-item">
                                 <img src="https://res.cloudinary.com/dtyodgaxi/image/upload/v1757586135/photo_48_2025-08-25_08-51-33_st1tw9.jpg" alt="Gallery" class="gallery-image" loading="lazy">
@@ -285,7 +297,7 @@
             </div>
             <section class="gallery-section">
 
-                <h2 class="mo" id="go">Shooting Professionnel</h2>
+                <h2 class="mo">Shooting Professionnel</h2>
 
                     <div class="section-content">
                         <ul class="gallery-list">
@@ -324,7 +336,7 @@
             <section class="gallery-section"> 
 
 
-                <h2 class="mo" id="go">Rencontre Association</h2>
+                <h2 class="mo">Rencontre Association</h2>
 
                     <div class="section-content">
                         <ul class="gallery-list">
@@ -417,7 +429,7 @@
             </div>
             <section class="gallery-section">
 
-                <h2 class="mo" id="go">Shooting Évènement</h2>
+                <h2 class="mo">Shooting Évènement</h2>
 
                     <div class="section-content">
                         <ul class="gallery-list">
@@ -453,7 +465,7 @@
             </div>
             <section class="gallery-section">
 
-                <h2 class="gi" id="go">Shooting Nature</h2>
+                <h2 class="gi">Shooting Nature</h2>
 
                     <div class="section-content">
                         <ul class="gallery-list">
